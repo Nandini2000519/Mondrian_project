@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      /* height: 100vh; */
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      background-color: antiquewhite;
+    }
+    h1{
+      font-size: 6em;
+      color: rgb(45, 26, 172);
+      margin: 0;
+      padding: 0;
+    }
+    h3{
+      font-size: 3em;
+      color: rgb(22, 143, 143);
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;    
+      grid-template-rows: 414px 130px 155px 22px; 
+      background-color: #000;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+    }
+    .colmn1{
+      background-color: #E72F24 ;
+    }
+    .colmn2{
+      background-color: #F0F1EC ;
+      grid-column: span 3;
+    } 
+    .colmn3{
+      background-color: #F0F1EC ;
+      grid-row: span 2;
+    }
+    .colmn4{
+      background-color: #F0F1EC ;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .colmn5{
+      background-color: #004592 ;
+      border-bottom: 10px solid black;
+    }
+    
+    .colmn6{
+      background-color: #F0F1EC ;
+      grid-row: span 2;
+    }
+    
+    .colmn7{
+      background-color: #F0F1EC ;
+    }
+    .colmn8{
+      background-color: #F9D01E ;
+    }
+    .colmn9{
+      background-color: #232629 ;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  
+  <h1>Mondrian Project </h1>
+  <h3>Composition no. III</h3> 
+  <div class="grid-container">
+    <div class="colmn1"></div>
+    <div class="colmn2"></div>
+    <div class="colmn3"></div>
+    <div class="colmn4"></div>
+    <div class="colmn5"></div>
+    <div class="colmn6"></div>
+    <div class="colmn7"></div>
+    <div class="colmn8"></div>
+    <div class="colmn9"></div>
+  </div>
+</body>
+
+</html>
